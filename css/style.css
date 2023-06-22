@@ -1,0 +1,16 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: auto;
+  padding: 15px 30px;
+}
+
+h1 {
+  font-family: "M PLUS 1p";
+}

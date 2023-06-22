@@ -1,0 +1,78 @@
+form {
+  padding: 30px;
+}
+
+.label, .box {
+  color: #333;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: .9em;
+}
+
+.box {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1.3px solid #969da3;
+  border-radius: 25px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+.box::placeholder {
+  color: #999;
+}
+
+.box:focus {
+  border-color: #f769a0;
+  outline: none;
+}
+
+.submit {
+  display: block;
+  align-items: center;
+  width: 250px;
+  margin:0 auto;
+  padding: 0.4em 2em;
+  border: 1px solid #f769a0;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #f769a0;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.submit:hover{
+  background-color: #f769a0;
+  color: #fff;
+  animation: ripple 0.3s ;
+}
+
+@keyframes ripple {
+0% {
+  opacity: 0;
+}
+40% {
+  opacity: 0.3;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.submitBox{
+  max-width: 600px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}

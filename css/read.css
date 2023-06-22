@@ -1,0 +1,85 @@
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.post{
+  background-color: rgb(255, 220, 225);
+  margin: 10px;
+  padding: 10px 20px;
+  width: 600px;
+}
+
+p{
+  max-width: 460px;
+}
+
+#boxroll{
+  max-height: 550px;
+  width: 700px;
+  overflow-y: scroll;
+}
+
+.likeBtn {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 5px;
+  max-width: 122px;
+  min-width: 122px;
+  padding: 0 30px;
+  background: #ff5c9a	;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  font-size: 1rem;
+}
+.likeBtn.count {
+  color: #fff;
+    font-family: "M PLUS 1p";
+}
+.likeBtn:hover {
+  background: #ff7abc;
+}
+.likeBtn.active {
+  background: #fa93be;
+}
+.likeBtn.active::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left:-50px;
+  content: "";
+  background: #ffcfe1;
+  border-radius: 100%;
+  opacity: 0;
+  animation: ripple 0.3s 1 ease-out;
+    }
+
+    @keyframes ripple {
+      0% {
+        opacity: 1;
+        transform: scale(0.0);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.0);
+      }
+    }
+    
+    
